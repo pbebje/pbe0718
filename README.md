@@ -10,5 +10,5 @@ out there using the Date and Calendar objects the SimpleDateFormat class and Apa
 with legacy logic fairly easy.
 
 NOTE - Complete CRUD implementation was done in DAO Impl class even though only the Select calls where used and tested. 
-It was common practice in older jobs when creating DAO classes to implement all CRUD logic even if not used for
-future possible business needs.
+It was common practice in older jobs when creating DAO classes to implement all CRUD logic even if not used, it would
+be available for future possible business needs.
