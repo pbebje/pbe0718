@@ -133,7 +133,7 @@ public class ToolDataDaoImpl implements ToolDataDao {
     }
 
     /*
-     * This Method is used to return all Tools.
+     * This Method is used to return all Tools. Method is null safe.
      * @return - List<Tool> of all Tools, could be an empty List but will NOT return null
      * @throws - Exception, returns user-friendly message to be displayed from calling class
      */
