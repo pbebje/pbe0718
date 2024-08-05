@@ -15,18 +15,18 @@ public class CalculationHelper {
         return df.format(num);
     }
 
-    public static<N extends Number> String formatCurrency(N num) {
+    public static<N extends Number> String formatCurrency(N num) throws Exception {
         DecimalFormat df = new DecimalFormat();
         df.setRoundingMode(RoundingMode.HALF_UP);
         NumberFormat formatter = NumberFormat.getCurrencyInstance();
-        return formatter.format(df.format(num));
+        return formatter.format(NumberFormat.getInstance().parse(df.format(num)));
     }
 
-    public static<N extends Number> String formatPercentage(N num, int decimalPlaces) {
+    public static<N extends Number> String formatPercentage(N num, int decimalPlaces) throws Exception {
         DecimalFormat df = new DecimalFormat();
         df.setRoundingMode(RoundingMode.HALF_UP);
         NumberFormat formatter = NumberFormat.getPercentInstance();
         formatter.setMaximumFractionDigits(decimalPlaces);
-        return formatter.format(df.format(num));
+        return formatter.format(NumberFormat.getInstance().parse(df.format(num)));
     }
 }
