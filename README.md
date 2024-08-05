@@ -8,3 +8,7 @@ or the newer LocalDate classes for Java 8 and higher. I decided to use the newer
 still using a Java version less than 8 is not secure by lack of support. While there are millions of lines of Java code 
 out there using the Date and Calendar objects the SimpleDateFormat class and Apache Commons DateUtil make interacting
 with legacy logic fairly easy.
+
+NOTE - Complete CRUD implementation was done in DAO Impl class even though only the Select calls where used and tested. 
+It was common practice in older jobs when creating DAO classes to implement all CRUD logic even if not used for
+future possible business needs.
