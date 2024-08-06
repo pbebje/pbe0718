@@ -26,7 +26,7 @@ public class PointOfSaleTest {
         // 07/04/2020 the fourth is on Saturday
         // Ladder has Weekend Charge True and Holiday charge False
         // 07/02 - Thursday, 07/03 Friday, 07/04 - Saturday
-        // days of charge should be 2 as the Fourth of July is actually observed July 3
+        // Days of charge should be 2 as the Fourth of July is actually observed July 3
         // Chargeable days in list: 07/02 - Thursday, 09/04 - Saturday
         // Pre-discount charge is 1.99 * 2 = 3.98
         // Discount amount = 3.98 * .10 = 39.8 round half up to .40
@@ -50,7 +50,7 @@ public class PointOfSaleTest {
         // 07/04/2015 the fourth is on Saturday
         // Chainsaw has Weekend Charge False and Holiday charge True
         // 07/02 - Thursday, 07/03 Friday, 07/04 - Saturday, 07/05 - Sunday, 07/06 - Monday
-        // days of charge should be 3 as the Fourth of July is actually observed July 3 and is chargeable
+        // Days of charge should be 3 as the Fourth of July is actually observed July 3 and is chargeable
         // weekend days are NOT chargeable
         // Chargeable days in list: 07/02 - Thursday, 07/06 - Monday, 07/07 - Tuesday, 07/08 - Wednesday, 07/09 - Thursday, 07/10 Friday
         // Pre-discount charge is 1.49 * 3 = 4.47
@@ -75,7 +75,7 @@ public class PointOfSaleTest {
         // Sept 2015 has labor day on 09/07/2015
         // Jackhammer has Weekend Charge False and Holiday charge False
         // 09/03 - Thursday, 09/04 Friday, 09/05 - Saturday, 09/06 - Sunday, 09/07 - Monday, 09/08 - Tuesday
-        // days of charge should be 3 as labor Day is Monday 09/07/2015 and is NOT chargeable
+        // Days of charge should be 3 as labor Day is Monday 09/07/2015 and is NOT chargeable
         // weekend days are NOT chargeable
         // Chargeable days in list: 09/03 - Thursday, 09/04 Friday, 09/08 - Tuesday
         // Pre-discount charge is 2.99 * 3 = 8.97
@@ -101,7 +101,7 @@ public class PointOfSaleTest {
         // Jackhammer has Weekend Charge False and Holiday charge False
         // 07/02 - Thursday, 07/03 Friday, 07/04 - Saturday, 07/05 - Sunday, 07/06 - Monday,
         // 07/07 - Tuesday, 07/08 - Wednesday, 07/09 - Thursday, 07/10 Friday
-        // days of charge should be 6 as the Fourth of July is actually observed July 3 and is NOT chargeable
+        // Days of charge should be 6 as the Fourth of July is actually observed July 3 and is NOT chargeable
         // weekend days are NOT chargeable.
         // Chargeable days in list: 07/02 - Thursday, 07/06 - Monday, 07/07 - Tuesday, 07/08 - Wednesday, 07/09 - Thursday, 07/10 Friday
         // Pre-discount charge is 2.99 * 6 = 17.94
@@ -126,7 +126,7 @@ public class PointOfSaleTest {
         // 07/04/2020 the fourth is on Saturday
         // Jackhammer has Weekend Charge False and Holiday charge False
         // 07/02 - Thursday, 07/03 Friday, 07/04 - Saturday, 07/05 - Sunday
-        // days of charge should be 1 as the Fourth of July is actually observed July 3 and is chargeable
+        // Days of charge should be 1 as the Fourth of July is actually observed July 3 and is chargeable
         // weekend days are NOT chargeable
         // Chargeable days in list: 07/02 - Thursday
         // Pre-discount charge is 2.99 * 1 = 2.99
@@ -151,7 +151,7 @@ public class PointOfSaleTest {
         // 07/04/2021 the fourth is on Sunday
         // Chainsaw has Weekend Charge False and Holiday charge True
         // 07/02 - Thursday, 07/03 Friday, 07/04 - Saturday, 07/05 - Sunday, 07/06 - Monday
-        // days of charge should be 3 as the Fourth of July is actually observed July 6 and is chargeable
+        // Days of charge should be 3 as the Fourth of July is actually observed July 6 and is chargeable
         // weekend days are NOT chargeable
         // Chargeable days in list - 07/02 - Thursday, 07/03 Friday, 07/06 - Monday
         // Pre-discount charge is 1.49 * 3 = 4.47
@@ -175,8 +175,8 @@ public class PointOfSaleTest {
     public void testNoChargeableDays() {
         // 07/04/2020 the fourth is on Saturday
         // Jackhammer has Weekend Charge False and Holiday charge False
-        // 07/03 Friday, 07/04 - Saturday, 07/04 - Thursday
-        // days of charge should be 0 as the Fourth of July is actually observed July 3 and
+        // 07/03 Friday, 07/04 - Saturday, 07/05 - Sunday
+        // Days of charge should be 0 as the Fourth of July is actually observed July 3 and
         // both Holidays and Weekends are NOT chargeable
         // Pre-discount charge is 2.99 * 0 = .00
         // Discount amount = .00 * .00 = .00
